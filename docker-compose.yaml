@@ -3,6 +3,7 @@ services:
   dnsmasq:
     image: quay.io/coreos/dnsmasq
     container_name: "dnsmasq"
+    restart: always
     cap_add:
       - NET_ADMIN
     network_mode: "host"
