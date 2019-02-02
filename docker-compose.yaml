@@ -7,6 +7,8 @@ services:
     cap_add:
       - NET_ADMIN
     network_mode: "host"
+    ports:
+      - '4011'
     volumes:
       - ./dnsmasq.conf:/etc/dnsmasq.conf
       - ./dnsmasq.resolv.conf:/etc/dnsmasq.resolv.conf
